@@ -1,0 +1,49 @@
+<div class="sticky-top">
+  <div class="topHeader">
+    <h3>Where in the world?</h3>
+  </div>
+</div>
+<div class="container">
+  <button (click)="goBack()" class="back-button">
+    <span>&larr;</span> Back
+  </button>
+
+  <div class="country-detail">
+    <div class="flag-container">
+      <img
+        [src]="country.flags.png"
+        alt="{{ country.name }} flag"
+        class="country-flag"
+      />
+    </div>
+
+    <div class="country-info">
+      <h2>{{ country.name }}</h2>
+      <div class="info-group">
+        <div class="info-column">
+          <p><strong>Native Name:</strong> {{ country.nativeName }}</p>
+          <p><strong>Population:</strong> {{ country.population | number }}</p>
+          <p><strong>Region:</strong> {{ country.region }}</p>
+          <p><strong>Sub Region:</strong> {{ country.subregion }}</p>
+          <p><strong>Capital:</strong> {{ country.capital }}</p>
+        </div>
+        <div class="info-column">
+          <p><strong>Top Level Domain:</strong> {{ country.topLevelDomain }}</p>
+          <p><strong>Currencies:</strong> {{ getCurrencies() }}</p>
+          <p><strong>Languages:</strong> {{ getLanguage() }}</p>
+        </div>
+      </div>
+      <div class="border-countries">
+        <p><strong>Border Countries:</strong></p>
+        <div class="border-countries-list">
+          <span
+            *ngFor="let borderCountry of borderCountries"
+            class="border-country"
+          >
+            {{ borderCountry }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

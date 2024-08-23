@@ -1,0 +1,109 @@
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* Back Button Styling */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-button span {
+  margin-right: 10px;
+  font-size: 20px;
+  position: relative;
+  top: -3px;
+}
+
+/* Country Detail Styling */
+.country-detail {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+/* Flag Container Styling */
+.flag-container {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 50px;
+}
+
+.country-flag {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Country Info Styling */
+.country-info {
+  flex: 2;
+}
+
+.country-info h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.info-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-column {
+  flex: 1;
+}
+
+.info-column p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Border Countries Styling */
+.border-countries {
+  margin-top: 30px;
+}
+
+.border-countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.border-country {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .country-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flag-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .info-group {
+    flex-direction: column;
+  }
+}

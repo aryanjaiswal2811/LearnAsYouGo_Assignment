@@ -1,0 +1,40 @@
+.country-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+mat-card {
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 1rem;
+}
+.sticky-top {
+  background: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.noInfo {
+  padding: 1rem;
+  color: grey;
+}
+
+.image {
+  height: 8rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flagPng {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
